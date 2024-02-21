@@ -15,7 +15,7 @@ def geocode_address(gmaps, address):
     return None, None
 
 # Initialize Google Maps client
-gmaps = googlemaps.Client(key='AIzaSyBIcVzJwkW20rIbkqdi9Yfhpiog9fp8y4s')
+gmaps = googlemaps.Client(key='YOURAPIKEY')
 
 # Set the locale for currency formatting
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
