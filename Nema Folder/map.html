@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8e917e4a763d55f1c1aa1cb5e3605065 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8e917e4a763d55f1c1aa1cb5e3605065" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8e917e4a763d55f1c1aa1cb5e3605065 = L.map(
+                "map_8e917e4a763d55f1c1aa1cb5e3605065",
+                {
+                    center: [28.5251882, -81.2885721],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c3c2d4609a4b6ad74fefbcf9e73a41e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2c3c2d4609a4b6ad74fefbcf9e73a41e.addTo(map_8e917e4a763d55f1c1aa1cb5e3605065);
+        
+    
+            var feature_group_73470c1d131188c644d52e11ec88fccf = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_bb547f6e03379566f201c61fcf3fdbc2 = L.marker(
+                [28.5251882, -81.2885721],
+                {}
+            ).addTo(feature_group_73470c1d131188c644d52e11ec88fccf);
+        
+    
+            var icon_346f4b334c349bd470389721b932ac57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bb547f6e03379566f201c61fcf3fdbc2.setIcon(icon_346f4b334c349bd470389721b932ac57);
+        
+    
+            marker_bb547f6e03379566f201c61fcf3fdbc2.bindTooltip(
+                `<div>
+                     <div style="white-space: nowrap;">
+                                        <b>Cust ID:</b> 7547300602<br>
+                                        <b>Client:</b> Sean John Don<br>
+                                        <b>AUM:</b> $3,745,999
+                                    </div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_73470c1d131188c644d52e11ec88fccf.addTo(map_8e917e4a763d55f1c1aa1cb5e3605065);
+        
+    
+            var feature_group_b38fa9574f498bc459ff72f1db63d45a = L.featureGroup(
+                {}
+            );
+        
+    
+            feature_group_b38fa9574f498bc459ff72f1db63d45a.addTo(map_8e917e4a763d55f1c1aa1cb5e3605065);
+        
+    
+            var feature_group_357e77eb3393b801f14e084d44ca6125 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0759a9552ebd7734fba055098974b0f4 = L.marker(
+                [45.5025323, -122.5962914],
+                {}
+            ).addTo(feature_group_357e77eb3393b801f14e084d44ca6125);
+        
+    
+            var icon_7bdbec0ba3b91e179a8dc00fb7b7f05f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0759a9552ebd7734fba055098974b0f4.setIcon(icon_7bdbec0ba3b91e179a8dc00fb7b7f05f);
+        
+    
+            marker_0759a9552ebd7734fba055098974b0f4.bindTooltip(
+                `<div>
+                     <div style="white-space: nowrap;">
+                                        <b>Cust ID:</b> 7838392682<br>
+                                        <b>Client:</b> Michael Waldor<br>
+                                        <b>AUM:</b> $11,456,733
+                                    </div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_357e77eb3393b801f14e084d44ca6125.addTo(map_8e917e4a763d55f1c1aa1cb5e3605065);
+        
+    
+            var feature_group_dcf69579509b13cebe681b80a2d737c1 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_f0422a2c644c85b8b9771cf3e44035f9 = L.marker(
+                [41.531534, -93.6036372],
+                {}
+            ).addTo(feature_group_dcf69579509b13cebe681b80a2d737c1);
+        
+    
+            var icon_b41d17ffe92251072d82db1d74d43473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f0422a2c644c85b8b9771cf3e44035f9.setIcon(icon_b41d17ffe92251072d82db1d74d43473);
+        
+    
+            marker_f0422a2c644c85b8b9771cf3e44035f9.bindTooltip(
+                `<div>
+                     <div style="white-space: nowrap;">
+                                        <b>Cust ID:</b> 1147810046<br>
+                                        <b>Client:</b> Robert Walter<br>
+                                        <b>AUM:</b> $45,566,799
+                                    </div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_dcf69579509b13cebe681b80a2d737c1.addTo(map_8e917e4a763d55f1c1aa1cb5e3605065);
+        
+    
+            var layer_control_0b0acc264028892f6b98182f9a55cab7_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2c3c2d4609a4b6ad74fefbcf9e73a41e,
+                },
+                overlays :  {
+                    "AUM: $1,000,000 - $4,999,999" : feature_group_73470c1d131188c644d52e11ec88fccf,
+                    "AUM: $5,000,000 - $9,999,999" : feature_group_b38fa9574f498bc459ff72f1db63d45a,
+                    "AUM: $10,000,000 - $19,999,999" : feature_group_357e77eb3393b801f14e084d44ca6125,
+                    "AUM: $20,000,000 - $999,999,999" : feature_group_dcf69579509b13cebe681b80a2d737c1,
+                },
+            };
+            let layer_control_0b0acc264028892f6b98182f9a55cab7 = L.control.layers(
+                layer_control_0b0acc264028892f6b98182f9a55cab7_layers.base_layers,
+                layer_control_0b0acc264028892f6b98182f9a55cab7_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8e917e4a763d55f1c1aa1cb5e3605065);
+
+        
+</script>
+</html>
